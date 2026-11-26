@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b98568;
+    color: #19453c;
+}
+
+#inicio {
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background-color: #fcfafacb;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    list-style-type: none;
+}
+
+#inicio img {
+    width: 120px;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+#inicio a {
+    margin-right: 5px;
+    text-decoration: none;
+    padding-left: 20px;
+    color: rgb(68, 68, 68);
+    font-size: 18px;
+}
+
+#inicio a:hover {
+    transform: scale(1.10);
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+}
+
+main {
+    min-height: 100vh;
+    padding: 105px 5% 80px;
+}
+
+.titulo {
+    width: 100%;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.titulo h1 {
+    color: white;
+    font-size: 26px;
+}
+
+.Palmeira img {
+    width: 75px;
+    margin-top: -10px;
+}
+
+.cards {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 140px 15px;
+}
+
+.card {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+}
+
+.informacoes {
+    padding: 13px 15px 15px;
+    min-height: 94px;
+}
+
+.Descricao {
+    color: #b97555;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card h2 {
+    color: #19453c;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 11px;
+}
+
+.rodape {
+    width: 100%;
+    background-color: #164c3d;
+    color: #efd4c4;
+    text-align: center;
+    padding: 25px 10px 18px;
+}
+
+.rodape h3 {
+    margin: 0 0 15px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.rodape h3 {
+    margin: 5px;
+}
+
+.Links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.Links a {
+    color: #efd4c4;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.Links a:hover {
+    color: white;
+}
+
+.rodape p {
+    margin: 10px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+
+    
+    #inicio {
+        height: auto;
+        min-height: 60px;
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #inicio img {
+        display: none;
+    }
+
+    #inicio a {
+        margin-right: 0;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 13px;
+    }
+    main {
+        min-height: 100vh;
+        padding: 90px 18px 50px;
+    }
+
+    .titulo {
+        margin-bottom: 25px;
+        gap: 10px;
+    }
+
+    .titulo h1 {
+        font-size: 23px;
+    }
+
+    .Palmeira img {
+        width: 55px;
+        margin-top: -5px;
+    }
+
+    .cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+
+    .informacoes {
+        padding: 14px 16px 17px;
+        min-height: 95px;
+    }
+
+
+    .Descricao {
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+
+
+    .card h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .rodape {
+        padding: 25px 15px 18px;
+    }
+
+
+    .rodape h3 {
+        font-size: 16px;
+    }
+
+
+    .Links {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+
+    .Links a {
+        font-size: 14px;
+    }
+
+
+    .rodape p {
+        font-size: 11px;
+    }
+}
+
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox:target {
+    display: flex;
+}
+
+.lightbox-fundo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    object-fit: contain;
+}

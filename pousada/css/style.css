@@ -1,0 +1,433 @@
+@font-face {
+    font-family: "FonteCurva";
+    src: url("../font/Allura/Allura-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff4de;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#inicio {
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background-color: #fcfafacb;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    list-style-type: none;
+}
+
+#inicio img {
+    width: 120px;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+#inicio a {
+    margin-right: 5px;
+    text-decoration: none;
+    padding-left: 20px;
+    color: rgb(68, 68, 68);
+    font-size: 18px;
+}
+
+#inicio a:hover {
+    transform: scale(1.10);
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+}
+
+.Fundo1 {
+    width: 100%;
+}
+
+.Fundo2 img {
+    width: 100%;
+    position: relative;
+    filter: brightness(70%);
+}
+
+.SobreImg img {
+    filter: brightness(120%);
+    width: 300px;
+    position: relative;
+    top: -115vh;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.Bem {
+    width: 300px;
+    position: relative;
+    top: -120vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: aliceblue;
+
+}
+
+.Nome {
+    font-family: "FonteCurva", sans-serif;
+    font-size: 100px;
+    width: 840px;
+    position: relative;
+    top: -115vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: aliceblue;
+}
+
+.logo {
+    margin-top: -220px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+.logo img {
+    margin-left: 50px;
+    width: 70px;
+}
+
+h2 {
+    margin-top: 100px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.Premio {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.Premio img {
+    width: 30%;
+    margin-left: 2%;
+    border-radius: 5px;
+}
+
+.Premio img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+.Final {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.Final2 img {
+    display: none;
+}
+
+.Final2 video {
+    width: 100%;
+    display: block;
+    filter: brightness(70%);
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.SobreImg2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.SobreImg2 img {
+    width: 467px;
+    filter: brightness(170%);
+    margin-bottom: 20px;
+}
+
+.Bem2 {
+    width: auto;
+    margin: 0;
+    font-size: 30px;
+}
+
+.Nome2 {
+    width: auto;
+    margin: 10px 0 30px;
+    font-size: 80px;
+}
+
+button {
+    width: 160px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #642727;
+    color: white;
+}
+
+.rodape {
+    width: 100%;
+    background-color: #164c3d;
+    color: #efd4c4;
+    text-align: center;
+    padding: 25px 10px 18px;
+}
+
+.rodape h3 {
+    margin: 0 0 15px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.rodape h3 {
+    margin: 5px;
+}
+
+.Links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.Links a {
+    color: #efd4c4;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.Links a:hover {
+    color: white;
+}
+
+.rodape p {
+    margin: 10px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+
+    #inicio {
+        height: auto;
+        min-height: 60px;
+        padding: 10px 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: fixed;
+    }
+
+    #inicio a {
+        padding-left: 8px;
+        margin-right: 8px;
+        font-size: 13px;
+    }
+
+    #inicio img {
+        display: none;
+    }
+
+    .Fundo1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .Fundo2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .Fundo2 img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .SobreImg img {
+        width: 65px;
+        position: absolute;
+        top: 130px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .Bem {
+        width: 90%;
+        position: absolute;
+        top: 220px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 20px;
+        color: aliceblue;
+    }
+
+    .Nome {
+        width: 100%;
+        position: absolute;
+        top: 260px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 55px;
+        line-height: 1.1;
+        color: aliceblue;
+    }
+
+    .logo {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .logo img {
+        width: 60px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .titulo {
+        font-size: 28px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        margin-top: 50px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 20px;
+    }
+
+    .Premio {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .Premio img {
+        width: 90%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .Avaliacao {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .Avaliacao img {
+        width: 90%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .Final {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .Final2  img {
+        display: block;
+        width: 100%;
+    }
+
+    .Final2 video {
+        display: none;
+    }
+
+    .SobreImg2 {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .SobreImg2 img {
+        width: 165px;
+        margin-bottom: 15px;
+    }
+
+    .Bem2 {
+        font-size: 22px;
+    }
+
+    .Nome2 {
+        font-size: 50px;
+        line-height: 1.1;
+        margin: 10px 0 25px;
+    }
+
+    button {
+        width: 150px;
+        height: 48px;
+        font-size: 14px;
+    }
+
+    .rodape {
+        padding: 20px 10px 15px;
+    }
+
+    .rodape h3 {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .Links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Links a {
+        font-size: 14px;
+    }
+
+    .rodape p {
+        font-size: 11px;
+        margin-top: 15px;
+    }
+}

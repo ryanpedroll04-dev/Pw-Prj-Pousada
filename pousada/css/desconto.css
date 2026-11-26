@@ -1,0 +1,112 @@
+#descontos {
+    background-color: antiquewhite;
+}
+
+#inicio {
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background-color: #fcfafacb;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    list-style-type: none;
+}
+
+#inicio img {
+    width: 120px;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+#inicio a {
+    margin-right: 5px;
+    text-decoration: none;
+    padding-left: 20px;
+    color: rgb(68, 68, 68);
+    font-size: 18px;
+}
+
+#inicio a:hover {
+    transform: scale(1.10);
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+}
+
+
+.cards {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cardss {
+    width: 32%;
+    background-color: #19453c;
+    transition: 0.3s;
+}
+
+.cardss:hover {
+    transform: translateY(-5px);
+}
+
+.cardss img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.informacoes {
+    padding: 13px 15px 20px;
+}
+
+.Descricaoo {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.ch2 {
+    color: antiquewhite;
+    font-size: 19px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.detalhe {
+    color: antiquewhite;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardss {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cardss img {
+        height: 200px;
+    }
+
+    .tituloo h1 {
+        font-size: 23px;
+    }
+
+    .Palmeira img {
+        width: 55px;
+    }
+
+}
